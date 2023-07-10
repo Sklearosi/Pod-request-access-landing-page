@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+mobile
+*/
+
+
+
+#background-cont {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./mobile/image-host.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+
+#layer {
+    height: 100vh;
+    width: 100%;
+    background-color: #121725;
+    opacity: 0.9;
+}
+
+#logo {
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+#logo img {
+    width: 150px;
+}
+
+#content {
+    width: 90%;
+    font-family: Chivo;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+#first {
+    text-align: center;
+    font-weight: 200;
+    font-size: 27px;
+    line-height: 50px;
+    color: white;
+}
+
+#second {
+    color: white;
+    font-weight: 100; 
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 27px;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 30px auto;
+}
+
+#firstimg {
+    width: 56px;
+    height: 17px;
+    
+}
+
+#secondimg {
+    width: 45px;
+    height: 17px;
+}
+
+#thirdimg {
+    width: 73px;
+    height: 11px;
+    margin-top: 3px;
+}
+
+#fourthimg {
+    width: 77px;
+    height: 15px;
+}
+
+
+#inputs {
+    margin-top: 70px;
+    display: grid;
+    font-family: Chivo;
+}
+
+#email-input {
+    padding: 10px 0px 10px 30px;
+    border-radius: 24px;
+    background-color: #2C344B;
+    border: none;
+    color: white;
+}
+
+#email-input::placeholder {
+    color: white;
+}
+
+#email-input:focus {
+    outline: none;
+}
+
+#request {
+    padding: 10px 30px 10px 30px;
+    border-radius: 24px;
+    margin-top: 10px;
+    background-color: #54E6AF;
+    font-weight: 700;
+}
+
+#wrong {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+    font-weight: 100;
+}
+
+#pattern {
+    display: none;
+}
+
+/*
+tablet
+*/
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: #121725;
+        overflow-x:hidden;
+    }
+
+    #logo {
+        padding-top: 50px;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    ::placeholder {
+        opacity: 0.8;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    #background-cont {
+        width: 65%;
+        height: 80vh;
+        margin-left: 35%;
+        background-image: url(./tablet/image-host.jpg);
+    }
+
+    #layer {
+        display: none;
+    }
+
+    #content {
+        width: 85%;
+        margin: 150px 0;
+        background-color: #121725;
+        padding-top: 100px;
+        margin-left: 35px;
+        display: grid;
+        padding-bottom: 100px;
+    }
+
+    #first {
+        text-align: left;
+        width: 100%;
+        line-height: 55px;
+        font-size: 48px;
+    }
+
+    #second {
+        text-align: left;
+        width: 68%;
+        font-size: 18px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        color: #C2CBE5;
+        opacity: 0.8;
+    }
+
+    #socials {
+    grid-row: 4/4;
+    margin-top: 50px;
+    
+    }
+
+    #firstimg {
+        width: 96px;
+        height: 29px;
+        opacity: 0.5;
+        margin-right: auto;
+    }
+    
+    #secondimg {
+        width: 78px;
+        height: 29px;
+        opacity: 0.5;
+        margin-right: auto;
+    }
+    
+    #thirdimg {
+        width: 125px;
+        height: 18px;
+        margin-top: 7px;
+        opacity: 0.5;
+        margin-right: auto;
+    }
+    
+    #fourthimg {
+        width: 129px;
+        height: 26px;
+        opacity: 0.5;
+        margin-right: auto;
+    }
+
+   #inputs {
+    width: 65%;
+    margin-top: 45px;
+   }
+
+   #email-input {
+    padding: 16px 0px 16px 30px;;
+   }
+
+   #request {
+    margin-top: -45px;
+    width: 40%;
+    height: 44px;
+    margin-left: 59%;
+    padding: 0;
+   }
+
+   #pattern {
+    position: absolute;
+    margin-left: 20px;
+    display: block;
+    bottom: -100px;
+   }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    #logo {
+        padding-top: 70px;
+        text-align: left;
+        margin-left: 120px;
+    }
+
+    #background-cont {
+        background-image: url(./desktop/image-host.jpg);
+        margin-top: 10vh;
+        width: 55%;
+        margin-left: 45%;
+    }
+
+    #content {
+        width: 58%;
+        margin-left: 120px;
+        padding-bottom: 50px;
+    }
+
+    #pattern {
+        right: 0;
+        bottom: 45px;
+    }
+}
