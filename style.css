@@ -7,6 +7,9 @@
 mobile
 */
 
+body {
+    background-color: #121725;
+}
 
 
 #background-cont {
@@ -247,10 +250,9 @@ tablet
    }
 
    #pattern {
-    position: absolute;
     margin-left: 20px;
     display: block;
-    bottom: -100px;
+    margin-top: -150px;
    }
 
 }
@@ -276,7 +278,6 @@ tablet
     }
 
     #pattern {
-        right: 0;
-        bottom: 45px;
+        margin-left: 90%;
     }
 }
